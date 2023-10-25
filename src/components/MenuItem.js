@@ -1,10 +1,12 @@
 import Link from "next/link";
 import React from "react";
 
+
 const MenuItem = ({title, address, Icon}) =>{
+
     return(
         <div>
-           <Link href={address} className="mx-4 lg:mx-6 hover:text-red-900">
+           <Link href={address} className="mx-4 lg:mx-6 hover:text-yellow-600 font-semibold p-2">
             <Icon className="text-2xl sm:hidden mx-4" />
             <p className="hidden sm:inline my-2 text-sm">{title}</p>
            </Link>
